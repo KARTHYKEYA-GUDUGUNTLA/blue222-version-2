@@ -84,10 +84,10 @@ const Example = () => {
                     <div className="col-md-6">
                       <label htmlFor="First_Name" className="control-label" style={{ fontWeight: 'bold' }}>First Name</label>
                       <span style={{ color: 'red'}}><strong>*</strong></span>
-                      <input className="form-control" id="First_Name" name="First_Name" type="text" value={firstName} onChange={handleChange(setFirstName)} />
+                      <input className="form-control" id="First_Name" name="First_Name" type="text" value={firstName} onChange={handleChange(setFirstName)} required />
                     </div>
                     <div className="col-md-6">
-                    <label htmlFor="Last_Name" className="control-label" style={{ fontWeight: 'bold' }}>Last Name</label>
+                    <label htmlFor="Last_Name" className="control-label" style={{ fontWeight: 'bold' }} required>Last Name</label>
 
                       <span style={{ color: 'red'}}><strong>*</strong></span>
                       <input className="form-control" id="Last_Name" name="Last_Name" type="text" value={lastName} onChange={handleChange(setLastName)} />
@@ -95,7 +95,7 @@ const Example = () => {
                   </div>
                   <div className="row s-form-row">
                   <div className="col-md-12">
-                    <label htmlFor="Account_Type" className="control-label" style={{ fontWeight: 'bold' }}>Account Type</label>
+                    <label htmlFor="Account_Type" className="control-label" style={{ fontWeight: 'bold' }} required>Account Type</label>
                     <span style={{ color: 'red'}}><strong>*</strong></span>
                   </div>
                   <div className="col-md-6">
@@ -128,7 +128,7 @@ const Example = () => {
                     <div className="col-md-12">
                       <label htmlFor="Email" className="control-label"style={{ fontWeight: 'bold' }} >Email</label>
                       <span style={{ color: 'red'}}><strong>*</strong></span>
-                      <input className="form-control" id="Email" name="Email" type="text" value={email} onChange={handleChange(setEmail)} />
+                      <input className="form-control" id="Email" name="Email" type="text" value={email} onChange={handleChange(setEmail)} required />
                     </div>
                   </div>
                   <div className="row s-form-row">
