@@ -165,3 +165,30 @@ h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.about_us p {
+    color: #5e5e76;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+}
+p {
+    margin: 0 0 10px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.card{
+    display: grid;
+    padding: 15px;
+}
+
+.step-line {
+    height: 2px; 
+    background-color: #ccc; 
+    margin: 0 20px; 
+  }
+  
