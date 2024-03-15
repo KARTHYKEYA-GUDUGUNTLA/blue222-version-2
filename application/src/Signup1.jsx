@@ -56,7 +56,7 @@ const Signup1 = (props) => {
 </div>
     <div className="row s-form-row">
       <div className="col-md-12">
-        <label htmlFor="Email" className="control-label"style={{ fontWeight: 'bold', marginBottom: '5px',fontFamily: 'inherit'}} >Email</label>
+        <label className="control-label"style={{ fontWeight: 'bold', marginBottom: '5px',fontFamily: 'inherit'}} >Email</label>
         <span style={{ color: 'red'}}><strong>*</strong></span>
         <input className="form-control" id="Email" name="Email" type="text" value={email} onChange={handleChange(setEmail)} required />
       </div>

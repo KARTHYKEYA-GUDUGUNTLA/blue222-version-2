@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Signup3 = () => {
   const [phoneCountry, setPhoneCountry] = useState('');
@@ -6,6 +8,9 @@ const Signup3 = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [captcha, setCaptcha] = useState('');
   const [referredBy, setReferredBy] = useState('');
+  const [captchaResponse, setCaptchaResponse] = useState('');
+
+  const captchaRef = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,14 +18,12 @@ const Signup3 = () => {
   };
 
   return (
-    <div id="step3" className="s-steps" data-step="3">
+    <div className='card'>
       <form onSubmit={handleSubmit}>
         <div className="row s-form-row">
           <div className="col-md-6">
             <label htmlFor="countries_phone_select" className="control-label" style={{ fontWeight: 'bold' }}>Country</label>
             <select 
-              id="countries_phone_select" 
-              name="phone_country" 
               className="form-control bfh-countries" 
               value={phoneCountry}
               onChange={(e) => setPhoneCountry(e.target.value)}
@@ -65,12 +68,9 @@ const Signup3 = () => {
             </div>
           </div>
         </div>
-        {/* Further elements */}
+    
         <div className="row s-form-row">
-          <div className="col-md-6">
-            <label htmlFor="Enter Captcha" className="control-label">Image Verification:</label>
-            {/* Captcha input */}
-          </div>
+         
           <div className="col-md-6">
             <label htmlFor="Referred_by_label" className="control-label">Referred By</label>
             <input 
@@ -83,8 +83,26 @@ const Signup3 = () => {
             />
           </div>
         </div>
-        {/* Assuming a button for form submission */}
-        <button type="submit">Submit</button>
+        <div class="row s-form-row"> 
+        <div class="col-md-12">
+         <div class="form-group">
+        <ReCAPTCHA
+        sitekey="6Lcgl5gpAAAAABTQMsFNsJqMX4Z1xjqY80oyC1cP"
+        ref={captchaRef}
+      />
+        </div></div>
+        </div>
+       
+      
+        <div className="row s-form-row" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <div className="col-md-6" style={{ display: 'flex', justifyContent: 'flex-start' }}>
+      <small style={{ color: 'red', display: 'block', paddingTop: '16px' }}><strong>*</strong> Indicates a required field.</small>
+    </div>
+        <div className="col-md-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <button className="btn btn-primary" style={{ marginRight: '15px' }} type="submit">Continue</button>
+      <button className="btn btn-danger" type="button">Back</button>
+    </div>
+    </div>
       </form>
     </div>
   );
