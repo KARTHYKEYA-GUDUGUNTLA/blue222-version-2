@@ -13,9 +13,32 @@ const Signup1 = (props) => {
     setter(event.target.value);
   };
   
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     props.goToNextStep();
+    const formData = {
+        firstName,
+        lastName,
+        email,
+        accountType
+    };
+console.log(formData);
+    try {
+        const response = await fetch('http://localhost:3000/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) throw new Error('Form submission failed');
+
+        const data = await response.json();
+        console.log('Form submitted successfully:', data);
+    } catch (error) {
+        console.error(error);
+    }
   };
   return (
     <div className='card'>
@@ -42,18 +65,25 @@ const Signup1 = (props) => {
     <div className="col-md-6" style={{ marginTop: '10px' }}>
       <input
         className="form-field Account_Type"
+        name="accountType"
         type="radio"
+        value="Client"
+        checked={accountType === "Client"}
         onChange={handleChange(setAccountType)}
       /> Client (manage/hire Vendors)
     </div>
     <div className="col-md-6" style={{ marginTop: '10px' }}>
       <input
         className="form-field Account_Type"
+        name="accountType"
         type="radio"
+        value="Vendor"
+        checked={accountType === "Vendor"}
         onChange={handleChange(setAccountType)}
       /> Vendor (receive work)
     </div>
-</div>
+  </div>
+  
     <div className="row s-form-row">
       <div className="col-md-12">
         <label className="control-label"style={{ fontWeight: 'bold', marginBottom: '5px',fontFamily: 'inherit'}} >Email</label>
@@ -67,7 +97,7 @@ const Signup1 = (props) => {
     </div>
     <div className="col-md-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
       <button className="btn btn-primary" style={{ marginRight: '15px' }} type="submit">Continue</button>
-      <button className="btn btn-danger" type="button">Back</button>
+      <button className="btn btn-danger" type="button" onClick={props.goToPreviousStep}>Back</button>
     </div>
   </div>
     </form>

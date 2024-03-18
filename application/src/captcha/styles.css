@@ -1,0 +1,53 @@
+/*style.css*/
+
+* { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+} 
+
+body { 
+	display: flex;
+	align-items: center; /* Aligns vertically */
+	justify-content: center; /* Aligns horizontally */
+	height: 100vh; 
+	background: white; 
+} 
+
+.container1 { 
+	max-width: 30rem; /* Max width to ensure it doesn't get too wide on larger screens */
+	width: auto; /* Responsive width */
+	background-color: #ffffff; 
+	padding: 2em; /* Adjust padding as necessary */
+	border-radius: 30px; 
+	box-shadow: 0px 0px 30px 0px black; 
+} 
+
+.heading { 
+	margin-bottom: 2em; /* Add bottom margin only */
+	font-size: 2em; /* Adjust font size as necessary */
+	text-align: center; 
+	color: green; 
+} 
+
+/* Assuming you want to style a captcha canvas or image */
+.captcha-image { 
+	border: 2px solid crimson; 
+	border-radius: 20px; 
+	display: block; /* Make it a block to allow width adjustment */
+	margin: 0 auto; /* Center captcha image */
+}
+
+.captcha-input { 
+	display: block; /* Separate line for captcha input */
+	width: calc(100% - 4em); /* Subtract padding/margin/border */
+	margin: 1em auto; /* Center captcha input */
+}
+
+/* Adjust wrapper for buttons */
+.wrapper { 
+	display: flex; 
+	flex-direction: column; /* Stack them vertically */
+	align-items: center; /* Center-align items */
+}
+

@@ -1,22 +1,26 @@
 import React, { useState,useRef } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+import Captcha from './captcha/captcha';
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
 
-
-const Signup3 = () => {
+const Signup3 = (props) => {
+  
+    
   const [phoneCountry, setPhoneCountry] = useState('');
   const [countryCode, setCountryCode] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [captcha, setCaptcha] = useState('');
+  const [captchaText, setCaptchaText] = useState('');
   const [referredBy, setReferredBy] = useState('');
-  const [captchaResponse, setCaptchaResponse] = useState('');
+  const[phone,setPhone] = useState('');
 
   const captchaRef = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+  
   };
-
+ 
   return (
     <div className='card'>
       <form onSubmit={handleSubmit}>
@@ -44,48 +48,64 @@ const Signup3 = () => {
           </div>
           
           <div className="col-md-6">
-            <div>
-              <label htmlFor="Cell Phone Number" className="control-label">Cell Phone Number</label>
-            </div>
-            <div className="col-md-4">
-              <input 
-                id="countrycode_1" 
-                name="countrycode_1" 
-                className="form-control bfh-phone" 
-                value={countryCode}
-                readOnly
-              />
-            </div>
-            <div className="col-md-8">
-              <input 
-                className="form-control bfh-phone" 
-                id="Phone_1" 
-                name="Phone_1" 
-                type="text" 
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-              />
-            </div>
-          </div>
+  <label htmlFor="Phone_1" className="control-label">Cell Phone Number</label>
+  <div className="d-flex">
+    <input 
+      id="countrycode_1" 
+      name="countrycode_1" 
+      className="form-control me-2" 
+      value={countryCode}
+     
+      style={{ width: '20%' }} 
+    />
+   
+    <input 
+      className="form-control" 
+      id="Phone_1" 
+      name="Phone_1" 
+      type="text" 
+      value={phoneNumber}
+      onChange={(e) => setPhoneNumber(e.target.value)}
+      style={{ width: '70%' }} 
+    />
+  </div>
+</div>
+
         </div>
     
+        
         <div className="row s-form-row">
-         
-          <div className="col-md-6">
-            <label htmlFor="Referred_by_label" className="control-label">Referred By</label>
-            <input 
-              className="form-control" 
-              id="Referred_by" 
-              name="Referred_by" 
-              type="text" 
-              value={referredBy}
-              onChange={(e) => setReferredBy(e.target.value)}
-            />
-          </div>
+        <div className="col-md-6 {flex:column} align-items-center">
+          <label htmlFor="captcha_input" className="control-label me-2">Image Verification:</label>
+          <span style={{ color: 'red'}}><strong>*</strong></span>
+          <span ><Captcha setCaptchaText={setCaptchaText} /></span>
+          <input 
+            className="form-control" 
+            id="captcha_input" 
+            name="captcha_input" 
+            type="text"
+            value={captchaText}
+            required
+          />
+          
         </div>
-        <div class="row s-form-row"> 
-        <div class="col-md-12">
-         <div class="form-group">
+        
+        <div className="col-md-6">
+          <label htmlFor="Referred_by_label" className="control-label">Referred By</label>
+          <input 
+            className="form-control" 
+            id="Referred_by" 
+            name="Referred_by" 
+            type="text" 
+            value={referredBy}
+            onChange={(e) => setReferredBy(e.target.value)}
+          />
+        </div>
+      </div>
+      
+        <div className="row s-form-row"> 
+        <div className="col-md-12">
+         <div className="form-group">
         <ReCAPTCHA
         sitekey="6Lcgl5gpAAAAABTQMsFNsJqMX4Z1xjqY80oyC1cP"
         ref={captchaRef}
@@ -100,7 +120,7 @@ const Signup3 = () => {
     </div>
         <div className="col-md-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
       <button className="btn btn-primary" style={{ marginRight: '15px' }} type="submit">Continue</button>
-      <button className="btn btn-danger" type="button">Back</button>
+      <button className="btn btn-danger" type="button" onClick={props.goToPreviousStep}>Back</button>
     </div>
     </div>
       </form>

@@ -10,6 +10,12 @@ const Example = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const goToNextStep = () => setCurrentStep(currentStep + 1);
+  const goToPreviousStep = () => {
+    setCurrentStep(prevStep => {
+      return prevStep > 1 ? prevStep - 1 : prevStep;
+    });
+  };
+  
   return (
     <div>
     <div className="top-head-home">
@@ -72,9 +78,9 @@ const Example = () => {
             </div>
             <div className="panel-body">
            
-            {currentStep === 1 && <Signup1 goToNextStep = {goToNextStep} />}
-            {currentStep === 2 && <Signup2 goToNextStep = {goToNextStep} />}
-            {currentStep === 3 && <Signup3 />}
+            {currentStep === 1 && <Signup1 goToNextStep = {goToNextStep}  goToPreviousStep = {goToPreviousStep}/>}
+            {currentStep === 2 && <Signup2 goToNextStep = {goToNextStep}  goToPreviousStep = {goToPreviousStep} />}
+            {currentStep === 3 && <Signup3 goToPreviousStep = {goToPreviousStep}/>}
             </div>
           </div>
         </div>
