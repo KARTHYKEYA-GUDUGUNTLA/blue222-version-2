@@ -6,8 +6,26 @@ import Signup2 from './Signup2';
 import Signup3 from './Signup3';
 import CustomNavbar from './CustomNavbar';
 
-const Example = () => {
+const SignUp = () => {
   const [currentStep, setCurrentStep] = useState(1);
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    Email: '',
+    accountType: '',
+    Username:'',
+    password:'',
+    confirmpassword:''
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
 
   const goToNextStep = () => setCurrentStep(currentStep + 1);
   const goToPreviousStep = () => {
@@ -15,6 +33,8 @@ const Example = () => {
       return prevStep > 1 ? prevStep - 1 : prevStep;
     });
   };
+  
+ 
   
   return (
     <div>
@@ -78,9 +98,29 @@ const Example = () => {
             </div>
             <div className="panel-body">
            
-            {currentStep === 1 && <Signup1 goToNextStep = {goToNextStep}  goToPreviousStep = {goToPreviousStep}/>}
-            {currentStep === 2 && <Signup2 goToNextStep = {goToNextStep}  goToPreviousStep = {goToPreviousStep} />}
-            {currentStep === 3 && <Signup3 goToPreviousStep = {goToPreviousStep}/>}
+            {currentStep === 1 && (
+        <Signup1
+          formData={formData}
+          handleChange={handleChange}
+          goToNextStep={goToNextStep}
+          goToPreviousStep={goToPreviousStep}
+        />
+      )}
+      {currentStep === 2 && (
+        <Signup2
+          formData={formData}
+          handleChange={handleChange}
+          goToNextStep={goToNextStep}
+          goToPreviousStep={goToPreviousStep}
+        />
+      )}
+      {currentStep === 3 && (
+        <Signup3
+          formData={formData}
+          handleChange={handleChange}
+          goToPreviousStep={goToPreviousStep}
+        />
+      )}
             </div>
           </div>
         </div>
@@ -100,4 +140,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default SignUp;

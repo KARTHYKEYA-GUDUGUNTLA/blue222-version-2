@@ -1,8 +1,7 @@
-// App.js
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Example from './example';
+import Example from './SignUp';
 
 function App() {
   return (
