@@ -1,12 +1,27 @@
 import React, { useState,useRef } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
-import Captcha from './captcha/captcha';
+import Captcha from '../captcha/captcha';
 import "react-phone-input-2/lib/bootstrap.css";
-import allCountries from './data/countrycode';
+import allCountries from '../data/countrycode';
+import {  useNavigate } from 'react-router-dom';
+
+
 
 const Signup3 = (props) => {
   
-    
+  const navigate = useNavigate();
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    if(userInput === captchaText) {
+      setVerificationMessage('Captcha is correct!');
+      setError('');
+    } else {
+      setVerificationMessage('Captcha is incorrect. Please try again.');
+      setError("Image Verification is incorrect")
+    }
+    navigate('/');
+  };
+  
   const [phoneCountry, setPhoneCountry] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [captchaText, setCaptchaText] = useState('');
@@ -28,17 +43,6 @@ const Signup3 = (props) => {
     setSelectedCountryCode(country ? country[2] : '');
   };
   const captchaRef = useRef(null)
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if(userInput === captchaText) {
-      setVerificationMessage('Captcha is correct!');
-      setError('');
-    } else {
-      setVerificationMessage('Captcha is incorrect. Please try again.');
-      setError("Image Verification is incorrect")
-    }
-  };
  
   return (
     <div className='card'>
@@ -46,6 +50,7 @@ const Signup3 = (props) => {
         <div className="row s-form-row">
           <div className="col-md-6">
             <label htmlFor="countries_phone_select" className="control-label" style={{ fontWeight: 'bold' }}>Country</label>
+            <span style={{ color: 'red' ,padding:5}}></span>
             <select 
               className="form-control bfh-countries" 
               value={phoneCountry}
@@ -61,6 +66,7 @@ const Signup3 = (props) => {
           
           <div className="col-md-6">
   <label htmlFor="Phone_1" className="control-label">Cell Phone Number</label>
+  <span style={{ color: 'red' ,padding:5}}><strong>*</strong></span>
   <div className="d-flex">
     <input 
       id="countrycode_1" 
@@ -97,6 +103,7 @@ const Signup3 = (props) => {
         
         <div className="col-md-6">
           <label htmlFor="Referred_by_label" className="control-label">Referred By</label>
+          <span style={{ color: 'red' ,padding:5}}><strong>*</strong></span>
           <input 
             className="form-control" 
             id="Referred_by" 
@@ -129,8 +136,6 @@ const Signup3 = (props) => {
       />
         </div></div>
         </div>
-       
-      
         <div className="row s-form-row" style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <div className="col-md-6" style={{ display: 'flex', justifyContent: 'flex-start' }}>
       <small style={{ color: 'red', display: 'block', paddingTop: '16px' }}><strong>*</strong> Indicates a required field.</small>

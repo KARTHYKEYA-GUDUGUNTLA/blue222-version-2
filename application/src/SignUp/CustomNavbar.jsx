@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './images/logo_new.png';
-import signInIcon from './images/signin.png';
+import logo from '../images/logo_new.png';
+import signInIcon from '../images/signin.png';
+import { Link} from 'react-router-dom';
 import './styles.css'
 const CustomNavbar = () => {
   return (
@@ -13,11 +14,11 @@ const CustomNavbar = () => {
               <img alt="Logo" className="img-responsive" src={logo} style={{ paddingBottom: '5px',paddingRight : '20px' }} />
             </a>
           </div>
-          <div className="navbar-header" >
-                <a className="btn btn-launch" href="https://stagingapp.blue222.com/login">
+          <div className="navbar-header" style={{paddingRight:100,paddingBottom:25}}>
+                 <Link className='btn-btn-launch' to="/">
                   <span><img src={signInIcon} alt="Sign in" /></span> 
                   <span style={{color:'white'}}>SIGNIN</span>
-                </a>
+                  </Link>
           </div>
         </div>
         </div>

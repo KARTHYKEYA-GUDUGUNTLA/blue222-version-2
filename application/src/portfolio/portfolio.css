@@ -1,0 +1,17 @@
+.single{
+    background: linear-gradient(
+            to bottom,
+            transparent 100px, 
+            #FFFFFF 100px, 
+            #FFFFFF calc(100% - 50px),
+            transparent calc(100% - 50px)
+          );
+        min-height: 100vh; 
+       
+        z-index: 1;
+        
+        body {
+            font: 13px / 1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
+            color: #333;
+        }
+    }

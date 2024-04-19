@@ -7,7 +7,7 @@ import Signup3 from './Signup3';
 import CustomNavbar from './CustomNavbar';
 
 const SignUp = () => {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(3);
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -34,10 +34,8 @@ const SignUp = () => {
     });
   };
   
- 
-  
   return (
-    <div>
+    <div style={{backgroundColor: 'white'}}>
     <div className="top-head-home">
     <div style={{paddingRight: '80px' , paddingLeft : '80px', paddingTop:'10px'}}>
       <div className="row">
@@ -50,14 +48,14 @@ const SignUp = () => {
       </div>
     </div>
   </div>
-  
-    <div className="container about_us">
-      <div className="col-sm-12 col-md-12" style={{padding: '20px'}}>
+  <div className='custom' style={{ paddingLeft: currentStep ===1 ? 140 : 0 }}>
+    <div className="container about_us" style={{backgroundColor : 'white'}}>
+      <div className="col-sm-12 col-md-12 custom" style={{padding: '20px', backgroundColor : 'white'}}>
         <div className="content">
-          <div className="col-md-offset-2" style={{ paddingBottom: '30px', boxSizing:'border-box' }}>
+        <div className={`${currentStep > 1 ? "col-md-8 offset-md-2" : "col-md-6 offset-md-2"}`} style={{ paddingRight: '30px', paddingBottom: '30px' }}>
           <div className= "stepwizard">
-          <div className="stepwizard-row">
-          <div className="stepwizard-step">
+          <div className="stepwizard-row d-flex justify-content-evenly align-items-center">
+          <div className="stepwizard-step" >
             <button
               type="button"
               className={`btn btn-circle ${currentStep > 1 ? 'btn-success' : currentStep === 1 ? 'btn-primary' : 'btn-secondary'}`}
@@ -76,7 +74,8 @@ const SignUp = () => {
           2 
         </button>
           </div>
-          <div className='step-line'></div>
+          <div className="step-line"></div>
+
           <div className="stepwizard-step">
             <button
               type="button"
@@ -127,7 +126,7 @@ const SignUp = () => {
       </div>
       
       </div>
-      <h4 className="text-center">
+      <h4 className="text-center"style={{color:'black'}}>
       We value your privacy and will not share your information with any other parties.{' '}
       <a href="#/" onClick={(e) => {
         e.preventDefault();
@@ -135,7 +134,7 @@ const SignUp = () => {
       }}>Click here</a> to view our privacy policy.
     </h4>
     </div>
-   
+    </div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-
 const Signup1 = (props) => {
 
   const [emailError, setEmailError] = useState('');
@@ -43,6 +42,7 @@ console.log(formData1);
     }
   };
   return (
+    <div >
     <div className='card'>
     <form onSubmit={handleSubmit}>
    
@@ -100,8 +100,7 @@ console.log(formData1);
     onChange={props.handleChange} 
     required
   />
-  
-    {emailError && <div className="invalid-feedback">{emailError}</div>}
+  {emailError && <span className="error-display" style={{ color: 'red' }}>{emailError}</span>}
   </div>
     </div>
     <div className="row s-form-row" style={{ display: 'flex', justifyContent: 'flex-end' }}>
@@ -114,6 +113,7 @@ console.log(formData1);
     </div>
   </div>
     </form>
+    </div>
     </div>
   )
 }

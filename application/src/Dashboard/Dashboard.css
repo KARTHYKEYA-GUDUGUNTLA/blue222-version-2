@@ -1,0 +1,19 @@
+/* Assuming .Dashboard is the container for the whole app, including sidebar and main content */
+
+.Dashboard {
+   
+    background: linear-gradient(
+        to bottom,
+        transparent 100px, 
+        #FFFFFF 100px, 
+        #FFFFFF calc(100% - 50px),
+        transparent calc(100% - 50px)
+      );
+    min-height: 100vh; 
+   
+    z-index: 1; 
+  }
+  body {
+    overflow: hidden; 
+  }
+  

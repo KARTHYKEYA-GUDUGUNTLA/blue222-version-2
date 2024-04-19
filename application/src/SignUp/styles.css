@@ -1,0 +1,219 @@
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+  }
+  
+  .custom{
+    width: 100%;
+  }
+ .html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.about_us .panel-heading, .subs-section .panel-heading, .accordion-section .panel-heading {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 40px;
+}
+.panel-info > .panel-heading {
+    background-color: #539ED7;
+    border-color: #539ED7;
+}
+.body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    
+}
+div {
+    display: block;
+}
+.about_us .panel-heading, .subs-section .panel-heading, .accordion-section .panel-heading {
+    color: #5e5e76;
+    font-weight: normal;
+    font-size: 40px;
+}
+.btn.disabled, .btn:disabled {
+    cursor: not-allowed;
+  }
+  
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.s-form-row {
+    padding: 10px 0;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+.top-head-home {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-image: url('../images/blue-bg-1024x402.jpg');
+    background-size: cover;
+    padding: 0px;
+}
+.banner-main {
+    clear: both;
+}
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-bg .navbar-collapse {
+    border: 0px;
+    box-shadow: none;
+    border-color: transparent;
+}
+.text-center {
+    text-align: center;
+}
+.banner-text {
+    padding: inherit;
+}
+h4, .h4 {
+    font-size: 14px;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about_us p {
+    color: #5e5e76;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+}
+p {
+    margin: 0 0 10px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.card{
+    display: grid;
+    padding: 15px;
+}
+
+.step-line {
+    width :1000%;
+    height: 1px; 
+    background-color: #333; 
+    margin: 0 20px; 
+    border-top: 2px solid #333;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  }
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, button, select, textarea {
+    font-family: inherit;
+}
+.navi {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    align-items: center;
+  }
+  
+  .collapse.navbar-collapse {
+    justify-content: flex-end; 
+  }
+  .navbar{
+    border-radius: 4px;
+  }

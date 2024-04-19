@@ -1,0 +1,102 @@
+.single{
+background: linear-gradient(
+        to bottom,
+        transparent 100px, 
+        #FFFFFF 100px, 
+        #FFFFFF calc(100% - 50px),
+        transparent calc(100% - 50px)
+      );
+    min-height: 100vh; 
+   
+    z-index: 1;
+    
+    body {
+        font: 13px / 1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
+        color: #333;
+    }
+}
+
+/* CSS for the scrollable form container */
+.scrollable-form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.scrollable-form {
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    background-color: white; /* Background color for the form */
+    border: 1px solid #d9edf7; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+}
+
+
+.dropzone .dz-default.dz-message {
+    left: 40%;
+    width: 240px;
+    height: 210px;
+    background-position: 0 140px;
+    background-size: cover;
+}
+
+.dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message span {
+    cursor: pointer;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bootstrap-duallistbox-container .buttons {
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.box-container {
+    /* Center the box container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%; /* Width of the container */
+    border: 1px solid black; /* Add a border around the container */
+   
+}
+
+.buttons {
+    /* Center the buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+   
+}
+
+.panel-heading {
+    border-bottom: none;
+}
+
+.control-label:after {
+    Font-size: 22px;
+    content: "*";
+    color: red;
+    padding: 1px;
+}

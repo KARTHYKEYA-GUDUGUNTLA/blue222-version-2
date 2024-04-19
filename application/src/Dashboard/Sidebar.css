@@ -1,0 +1,196 @@
+
+.layout {
+  width: 200px; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 100; 
+  background: linear-gradient(
+    to bottom,
+    transparent 100px, 
+    #124c70 100px, 
+    #124c70 calc(100% - 50px), 
+    transparent calc(100% - 50px) 
+  );
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .layout {
+    max-width: 150px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    max-width: 100px; 
+  }
+}
+
+  .side-by-side-container {
+    display: flex;
+    align-items: right; 
+  }
+  
+#sidebar-wrapper{
+    height: 100vh;
+}
+#main-nav > li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    border-top: 1px solid #2f607d;
+    border-bottom: 1px solid #2f607d;
+  }
+  
+  
+  #main-nav > li > a {
+    width: 100%;
+    font-size: 13px;
+    background: #124c70;
+    font-weight: normal;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    padding: 11px 8px 11px 18px;
+    outline: none;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  #main-nav > li .sidebar-submenu li {
+    border-top: none; 
+  }
+  
+
+  #main-nav > li .sidebar-submenu li a {
+    background: #124c70; 
+    padding-left: 36px; 
+    padding-top: 11px; 
+    padding-bottom: 11px; 
+  }
+  
+  /* Adjust padding for nested items */
+  #main-nav > li .sidebar-submenu {
+    padding-left: 0;
+  }
+  .sidebar-toggle-btn {
+    background-color: #124c70;
+    border: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: white;
+    padding: 11px 18px;
+  }
+  
+  .sidebar-toggle-btn:hover, .sidebar-toggle-btn:focus {
+    background-color: #0e3c5e; 
+    color: white;
+  }
+ 
+  .sidebar-content-container, .collapse.show, .collapse {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+  .container, .row {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+ 
+  
+   
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 200px; 
+      width: 100%; 
+    }
+    
+    
+    @media (max-width: 768px) {
+      .sidebar-item {
+        font-size: 0.9em; /* Smaller text */
+      }
+    }
+    @media (max-width: 480px) {
+      .sidebar-item {
+
+        font-size: 0.8em; 
+        flex-direction: column; 
+        justify-content: center; 
+        padding: 8px 0; 
+      }
+    }
+    
+.sidebar-link, .sidebar-submenu-link {
+    display: block;
+    color: #FFF;
+    padding: 11px 18px;
+    font-size: 13px;
+    background: #0e3c5e;
+    text-decoration: none;
+    width: 100%; 
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+ 
+/* Custom CSS file */
+
+/* Default styles for the NavLink with sidebar-link class */
+.sidebar-link {
+  display: block; /* Use block display to make the link fill its container */
+    color: #FFF; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    background-color: #124c70; /* Set background color for the box-like effect */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    margin-bottom: 10px; /* Optional: Add spacing between links */
+ 
+}
+
+/* Styles for the hovering state */
+.sidebar-link:hover {
+  color: #FFF; /* Set to desired hover color, or keep the same as default */
+  text-decoration: none;
+}
+/* Styles for the active state */
+.sidebar-link.active {
+  background-color: #0e3753; /* Active background color */
+  color: #FFF; /* Active text color */
+  text-decoration: none; /* Keep the underline removed */
+}
+ 
+    .sidebar-submenu-link {
+        padding-left: 36px; 
+      }
+
+  
+  .sidebar-submenu-link:hover {
+    background-color: #02192b; 
+    color: white;
+  }
+  .sidebar-item {
+    display: block;
+  }
+  
+  .sidebar-content-container {
+    width: 100%;
+  }
+  
+  .sidebar-submenu {
+    display: block;
+    width: 100%;
+  }
+  
+  .sidebar-submenu-link {
+    display: block;
+    width: 100%;
+    padding-left: 36px; 
+  }
+    

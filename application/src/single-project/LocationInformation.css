@@ -1,0 +1,28 @@
+.location-form-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-half {
+    width: 48%;
+}
+
+.form-group{
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.panel-heading {
+    border-bottom: none;
+}
+.control-label:after {
+    Font-size: 22px;
+    content: "*";
+    color: red;
+    padding: 1px;
+}
