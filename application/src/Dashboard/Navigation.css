@@ -8,8 +8,8 @@
     margin-left: 200px;
     background-image: linear-gradient(
       to bottom,
-      transparent 60%, /* Top 50% black */
-      #fff 40% /* Bottom 50% white */
+      transparent 60%, 
+      #fff 40% 
     );
     display: flex;
     align-items: center;

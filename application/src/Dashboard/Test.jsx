@@ -15,7 +15,7 @@ const buttonData = [
 
 const Test = () => {
   return (
-    <div id="content-container" className="card-container">
+    <div id="content-container" className="card-container" >
           <div className="row ten-columns" >
           {buttonData.map(button => (
             <div className="col-sm-6 col-md-6 col-lg-2" key={button.text}>

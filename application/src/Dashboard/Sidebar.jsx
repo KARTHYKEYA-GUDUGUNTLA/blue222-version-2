@@ -18,7 +18,8 @@ const Sidebar = () => {
     <div className='main1'>
       <div id="sidebar-wrapper">
         <nav id="sidebar">
-          <div id="main-nav" className="open-active">
+        <div id="main-nav" className="open-active" style={{ maxHeight: '100vh',  width: '210px' }}>
+
         
             <SidebarItem title="Dashboard" icon={faDashboard} to="/dashboard" />
             <SidebarItem title="Post Project" icon={faDashboard} to="#">
@@ -26,19 +27,22 @@ const Sidebar = () => {
           <SidebarItem title = "portfolio" icon={faChevronRight} to="/portfolio" />
             </SidebarItem>
             
-            <SidebarItem title="Open Opportunities" icon={faGlobe} to="/open-opportunities" />
+            <SidebarItem title="Open Opportunities" icon={faGlobe} to="https://stagingapp.blue222.com/OpenMaps" />
             <SidebarItem title="Portfolios" icon={faList} to="/portfolios" />
             <SidebarItem title="Preferred Vendors" icon={faUsers} to="/preferred-vendors" >
-            <SidebarItem title = "Invite Vendors" icon={faChevronRight} to="/ss" />
+            <SidebarItem title = "Invite Vendors" icon={faChevronRight} to="/invite-vendors" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
             </SidebarItem>
-            <SidebarItem title="Accounting" icon={faDollar} to="/accounting" />
+            <SidebarItem title="Accounting" icon={faDollar} to="/accounting" >
+            <SidebarItem title = "Overview" icon={faChevronRight} to="/account" />
+            <SidebarItem title = "single-project" icon={faChevronRight} to="/cardonfile" />
+            </SidebarItem >
            
           
             <SidebarItem title="Manage Account" icon={faDashboard} to="/manage-account" >
-            <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
+            <SidebarItem title = "Manage Users" icon={faChevronRight} to="/usersmanagement" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />

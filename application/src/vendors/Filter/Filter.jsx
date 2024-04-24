@@ -65,20 +65,10 @@ const Filter = () => {
                 <div className="col-md-7">
                   <div className="dev-drop">
                     <ul className="nav">
-                      {/* <div className="dropdown">
-                        <li className="button-dropdown">
-                          <a href="javascript:void(0)" className="dropdown-toggle" id="select-rfp">
-                            {projectType} <span>▼</span>
-                          </a>
-                          <ul className="dropdown-menu" role="menu" style={{display : 'block'}}>
-                            <SubFilters />
-                          </ul>
-                        </li>
-                      </div> */}
 
                       <div className="dropdown">
   <li className="button-dropdown">
-    <a href="javascript:void(0)" className="dropdown-toggle" id="select-rfp" onClick={handleToggleDropdown}>
+    <a  className="dropdown-toggle" id="select-rfp" onClick={handleToggleDropdown}>
       {projectType} <span>▼</span>
     </a>
     

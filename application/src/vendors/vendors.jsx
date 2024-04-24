@@ -23,7 +23,7 @@ function Vendors() {
                     <Sidebar />
                 </div>
             </div>
-            <div className="panel-body" style={{ paddingLeft: '210px' }}>
+            <div className="panel-body" style={{ paddingLeft: '210px',paddingTop:'0px' }}>
                 <div className="page-header" style={{ margin: '0' }}>
                     <h3>Invite Preferred Vendors</h3>
                 </div>
@@ -45,7 +45,7 @@ function Vendors() {
     </div>
 </div>
                 
-                {/* Heading in a new line */}
+               
                 <div className="row" >
                     <h3 style={{ paddingLeft :'20px' }}>
                         Search Vendors from BLUE222 Database
@@ -53,8 +53,8 @@ function Vendors() {
                 </div>
                 
                 <div >
-                <div className="row" style={{ marginTop: '20px' }}>
-                    <div className="col-md-4" style={{paddingBottom :'20px'}} >
+                <div className="row" >
+                    <div className="col-md-4">
                         <label htmlFor="search_service_capabilities" className="control-label" style={{ paddingLeft :'40px' }}>Service Capabilities</label>
                         <Karthy />
                     </div>
