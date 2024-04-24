@@ -20,7 +20,7 @@ const Dashboard = () => {
             <Sidebar />
           </div>
         </div>
-        <div style={{paddingLeft:'210px' ,paddingRight:'10px'}}>
+        <div style={{paddingLeft:'210px' ,paddingRight:'10px',paddingBottom:'200px'}}>
        
       
        <Test />
