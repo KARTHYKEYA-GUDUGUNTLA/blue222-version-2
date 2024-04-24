@@ -33,17 +33,29 @@ const Navigation = () => {
             </Dropdown.Toggle>
   
             <Dropdown.Menu align="right" className="dropdown-menu">
-              <Dropdown.Item href="/profile/...">
+            <li>
+              <Dropdown.Item href="/profile">
                 <FontAwesomeIcon icon={faUser} /> My Profile
               </Dropdown.Item>
-              <Dropdown.Item href="https://stagingapp.blue222.com/settings">
+            </li>
+            
+            <li>
+              <Dropdown.Item href="/settings">
                 <FontAwesomeIcon icon={faCogs} /> Settings
               </Dropdown.Item>
+            </li>
+            
+            <li>
               <Dropdown.Divider />
+            </li>
+          
+            <li>
               <Dropdown.Item href="https://stagingapp.blue222.com/logout">
                 <FontAwesomeIcon icon={faSignOutAlt} /> Logout
               </Dropdown.Item>
-            </Dropdown.Menu>
+            </li>
+          </Dropdown.Menu>
+          
           </Dropdown>
         </ul>
         </nav>
