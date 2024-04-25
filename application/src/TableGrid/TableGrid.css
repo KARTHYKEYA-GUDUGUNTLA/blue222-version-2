@@ -1,0 +1,237 @@
+#content-container .portlet {
+    margin-bottom: 2em;
+}
+
+.portlet {
+    position: relative;
+    clear: both;
+    width: auto;
+
+}
+
+
+
+.tablesorter-bootstrap {
+    width: 100%;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    line-height: normal;
+    font-weight: normal;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    white-space: normal;
+    font-variant: normal;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+colgroup {
+    display: table-column-group;
+    unicode-bidi: isolate;
+}
+
+.table-bordered thead tr, .table-bordered tfoot tr {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #eeeeee 100%);
+    background-repeat: repeat-x;
+}
+
+.table colgroup+thead tr:first-child th {
+    border-top: 0;
+}
+
+.tablesorter-bootstrap .tablesorter-header {
+    cursor: pointer;
+}
+
+.table-bordered thead tr th {
+    font-size: 12px;
+    font-weight: 800;
+    background-color: transparent;
+    border-bottom-width: 1px;
+    vertical-align: middle;
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+}
+
+th {
+    text-align: left;
+    display: table-cell;
+    unicode-bidi: isolate;
+}
+
+.tablesorter-bootstrap thead th, .tablesorter-bootstrap thead td, .tablesorter-bootstrap tfoot th, .tablesorter-bootstrap tfoot td {
+    font: bold 14px / 20px Arial, Sans-serif;
+    margin: 0 0 18px;
+}
+
+.tablesorter-bootstrap .tablesorter-header-inner {
+    position: relative;
+    padding: 4px 18px 4px 4px;
+    cursor: pointer;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.table-bordered thead tr th, .table-bordered tfoot tr th {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.tablesorter-bootstrap .tablesorter-header i {
+    font-size: 11px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    line-height: 14px;
+    display: inline-block;
+}
+
+i {
+    font-style: italic;
+}
+
+.tablesorter-bootstrap .tablesorter-filter-row .tablesorter-filter {
+    width: 98%;
+    margin: 0 auto;
+    padding: 4px 6px;
+    color: #333;
+    box-sizing: border-box;
+    transition: height 0.1s ease;
+}
+
+button, input, select[multiple], textarea {
+    background-image: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input[type="search" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+td {
+    display: table-cell;
+    unicode-bidi: isolate;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+}
+
+.btn {
+    outline: none !important;
+    border: none !important;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 4px;
+    user-select: none;
+    font-family: inherit;
+}
+
+button, input, select[multiple], textarea {
+    background-image: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+button, input, select, textarea {
+    margin: 0;
+}
+
+button {
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    background-color: buttonface;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+    .col-md-12 {
+        width: 100%;
+    }
+    }
+    
+    .col-md-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }

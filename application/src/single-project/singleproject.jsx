@@ -387,25 +387,27 @@ function handleMoveSelected() {
                                  <div style={{ paddingLeft: '220px' }}>
                                  <div className="row" style={{ display: 'flex',paddingLeft:'30px' }}>
                                  <div style={{ marginRight: '10px', marginTop: '1%' }}>
-                                     <input
-                                         id="action2"
-                                         className="continue btn btn-success"
-                                         value="Continue"
-                                         name="action"
-                                         form={formId}
-                                         type="submit"
-                                     />
-                                 </div>
-                                 <div style={{ marginRight: '10px', marginTop: '1%' }}>
-                                     <input
-                                         id="action3"
-                                         className="btn btn-info"
-                                         value="Save as Draft"
-                                         name="action"
-                                         form={formId}
-                                         type="submit"
-                                     />
-                                 </div>
+                                 <button
+                                     id="deletedtemplate"
+                                     className="btn btn-success"
+                                     data-toggle="modal"
+                                     data-target="#myModal1"
+                                     type="button"
+                                 >
+                                     Continue
+                                 </button>
+                             </div>
+                             <div style={{ marginRight: '10px', marginTop: '1%' }}>
+                             <button
+                                 id="deletedtemplate"
+                                 className="btn btn-primary"
+                                 data-toggle="modal"
+                                 data-target="#myModal1"
+                                 type="button"
+                             >
+                                 Save as Draft
+                             </button>
+                         </div>
                                  <div style={{ marginRight: '10px', marginTop: '1%' }}>
                                      <button
                                          id="savetemplate"
@@ -441,8 +443,3 @@ function handleMoveSelected() {
 }
 
 export default ProjectForm;
-
-
-
-
-

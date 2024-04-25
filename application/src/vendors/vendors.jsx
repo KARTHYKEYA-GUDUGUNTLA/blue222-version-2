@@ -3,6 +3,11 @@ import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
 import Karthy from './Karthy';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDashboard } from '@fortawesome/free-solid-svg-icons';
+
+import { Link } from "react-router-dom";
+import './vendors.css'
 
 const handleSearchButtonClick = () => {
     // Logic for handling the button click goes here
@@ -23,13 +28,26 @@ function Vendors() {
                     <Sidebar />
                 </div>
             </div>
-            <div className="panel-body" style={{ paddingLeft: '210px',paddingTop:'0px' }}>
-                <div className="page-header" style={{ margin: '0' }}>
+            <div id='content'>
+            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px' }}>
+             
+            <div className="col-md-6 col-sm-6 col-xs-12">
+                <ol className="breadcrumb" >
+                    <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} />Dashboard</Link></li>
+                    <li>Vendor Win / Loss Ratio</li>
+                </ol>
+            </div>
+        
+    </div>
+    <div id="content-container">
+    <div>
+            <div className="panel-body" style={{paddingTop:'0'}}>
+            <div className="page-header" style={{margin:'0px'}} >
                     <h3>Invite Preferred Vendors</h3>
                 </div>
                 
                 {/* Buttons in one line */}
-                <div className="col-md-6" style={{ marginTop: '20px' }}>
+                <div className="col-md-6">
                     <a className="btn btn-success" href="/firm/reference/single" title="Invite Single Vendor" style={{ marginRight: '10px' }}>
                         Invite Single Vendor
                     </a>
@@ -96,6 +114,22 @@ function Vendors() {
             </div>
             
             </div>
+</div>
+
+
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     );
 }

@@ -1,0 +1,62 @@
+#content {
+    background: #FFF;
+    width: auto;
+    z-index: 18;
+    margin-left: 200px;
+    position: relative;
+    left: auto;
+    top: auto;
+}
+
+#content-header {
+    position: relative;
+    top: -48px;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 4em;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #CCC;
+    border-top-left-radius: 4px;
+}
+
+body {
+    font: 13px / 1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
+}
+
+#content-container {
+    position: relative;
+    top: -80px;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    font-family: 'Open Sans', 'trebuchet ms', arial, sans-serif;
+}
+
+/* h3[Attributes Style] {
+    text-align: left;
+} */
+
+
+.tablesorter-bootstrap .tablesorter-header i {
+    font-size: 11px;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    line-height: 14px;
+    display: inline-block;
+}
+ 
+.tablesorter-bootstrap .bootstrap-icon-unsorted {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAMAAADOvxanAAAAVFBMVEUAAABCQkJZWVkZGRnJyckgICAZGRkZGRn8/PweHh4dHR0aGhoaGhpUVFQbGxvQ0NDc3NxMTExSUlIbGxvr6+s4ODhKSkogICAtLS00NDQzMzMnJydSEPrQAAAAGHRSTlMA1ssZRLgdAQbDyisqsZo8QdXUq0r9xPepSRwiAAAAX0lEQVQI13XHSQKAIAwEwQAKxn13Ev7/T2Pu9qmarJKPXIicI4PH4hxaKNrhm2S8bJK5h4YzKHrzJNtK6yYT/TdXzpS5zuYg4MSQYF6i4IHExdw1UVRi05HPrrvT53a+qyMFC9t04gcAAAAASUVORK5CYII=);
+}
+

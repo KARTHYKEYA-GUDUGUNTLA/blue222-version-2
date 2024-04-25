@@ -2,7 +2,10 @@ import React from 'react';
 import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDashboard } from '@fortawesome/free-solid-svg-icons';
+import './portfolio.css'
+import { Link } from "react-router-dom";
 function PortfolioComponent({ formData, handleInputChange }) {
     return (
         <div className='single'>
@@ -15,12 +18,25 @@ function PortfolioComponent({ formData, handleInputChange }) {
                 <Sidebar />
             </div>
         </div>
-        <div >
-        <div className="page-header" style={{paddingLeft:'210px',margin:'0'}}>
-			<h3 >Multiple Project</h3>
-		</div>
-        <div className="panel-body" style={{paddingLeft:'210px'}}>
-       
+        <div id='content' >
+
+        <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px', marginBottom:'30px' }}>
+             
+        <div className="col-md-6 col-sm-6 col-xs-12">
+            <ol className="breadcrumb" >
+                <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} />Dashboard</Link></li>
+                <li>Post Multiple Project</li>
+            </ol>
+        </div>
+        
+</div>
+
+       <div id='content-container'>
+<div >
+        <div className="panel-body" style={{marginTop:'0px'}}>
+        <div className="page-header" style={{margin:'0px'}} >
+        <h3 >Multiple Project</h3>
+        </div>
             <div>
                 <ul>
                     <li>Download the example Excel file and input your data to generate a portfolio.</li>
@@ -28,7 +44,7 @@ function PortfolioComponent({ formData, handleInputChange }) {
                 </ul>
             </div>
             <br />
-            <div className="panel panel-info">
+            <div className="panel panel-info" style={{marginBottom :'30px'}}>
                 <div className="col-md-12" style={{ backgroundColor: '#d9edf7', paddingBottom: '1px' }}>
                     <div className="row" style={{ paddingTop: '10px', marginBottom: '7px' }}>
                         <div className="col-md-8">
@@ -64,6 +80,13 @@ function PortfolioComponent({ formData, handleInputChange }) {
                     />
                 </div>
             </div>
+        </div>
+        </div>
+
+
+
+
+
         </div>
         </div>
         </div>

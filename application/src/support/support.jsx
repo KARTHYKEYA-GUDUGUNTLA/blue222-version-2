@@ -2,6 +2,9 @@ import React from 'react';
 import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
+import { Link } from "react-router-dom";
+import { faDashboard } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ContactUs = () => {
     return (
         <div className='single'>
@@ -14,7 +17,17 @@ const ContactUs = () => {
                     <Sidebar />
                 </div>
             </div>
-        <div id="content-container" style={{paddingLeft:'210px'}}>
+            <div id='content'>
+            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px'}}>
+             
+                    <div className="col-md-6 col-sm-6 col-xs-12">
+                        <ol className="breadcrumb" >
+                            <li><FontAwesomeIcon icon={faDashboard} /> &nbsp; Settings</li>
+                        </ol>
+                    </div>
+                
+            </div>
+        <div id="content-container">
             <div className="col-md-12 row banner-main">
                 <div className="text-center">
                     <h3>WE'D LOVE TO HEAR FROM YOU.</h3>
@@ -32,6 +45,12 @@ const ContactUs = () => {
                     <h3 align="center">300 LaFollette Station Dr. S #133<br />Floyds Knobs, IN 47119 </h3>
                 </div>
             </div>
+        </div>
+
+
+
+
+
         </div>
         </div>
     );
