@@ -1,0 +1,339 @@
+@media (min-width: 992px) {
+.col-md-12 {
+    width: 100%;
+}
+}
+
+.col-md-12, .col-sm-6, .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#content-container .portlet {
+    margin-bottom: 2em;
+}
+.portlet {
+    position: relative;
+    clear: both;
+    width: auto;
+}
+
+.dataTables_wrapper .row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+}
+
+@media (min-width: 768px) {
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+}
+
+div.dataTables_length label {
+    float: left;
+    text-align: left;
+    font-weight: normal;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    height: auto;
+}
+
+.dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select {
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+@media (min-width: 768px) {
+.form-inline .form-control {
+    display: inline-block;
+}
+}
+
+div.dataTables_length select {
+    width: 75px;
+}
+
+div.dataTables_length select {
+    margin-right: .65em;
+}
+
+select.input-sm {
+    line-height: 30px;
+}
+
+.form-control {
+    color: #555;
+    background-color: #fff;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    margin-bottom: 10px;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    margin: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+select:not(:-internal-select-author-button) {
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: default;
+    white-space: pre;
+}
+
+select {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-variant-position: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    font-kerning: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+div.dataTables_filter label {
+    float: right;
+    font-weight: normal;
+}
+
+body {
+    font: 13px / 1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+.col-sm-12 {
+    width: 100%;
+}
+}
+
+table.dataTable {
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+    box-sizing: content-box;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    line-height: normal;
+    font-weight: normal;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    white-space: normal;
+    font-variant: normal;
+}
+
+.table-bordered thead tr, .table-bordered tfoot tr {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #eeeeee 100%);
+    background-repeat: repeat-x;
+    
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.table caption+thead tr:first-child th, .table colgroup+thead tr:first-child th, .table thead:first-child tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+/* table.dataTable thead .sorting_asc {
+    background: url(../js/plugins/datatables/img/sort_asc.png) no-repeat center right;
+} */
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+}
+
+.table-bordered thead tr th, .table-bordered tfoot tr th {
+    font-size: 12px;
+    font-weight: 800;
+    border-bottom-width: 1px;
+    vertical-align: middle;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+}
+
+table.dataTable, table.dataTable td, table.dataTable th {
+    box-sizing: content-box;
+}
+
+th {
+    text-align: left;
+    display: table-cell;
+    unicode-bidi: isolate;     
+}
+
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+    text-align: right;
+}
+
+div.dataTables_info {
+    padding-top: 8px;
+}
+
+div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+li {
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.pagination>.disabled>span, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #999;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination>li>a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+.form-inline .form-control {
+    display: inline-block;
+}
+}
+
+div.dataTables_filter label input {
+    width: 215px;
+    margin-left: .65em;
+}
+

@@ -29,7 +29,7 @@ const Sidebar = () => {
             </SidebarItem>
             
             <SidebarItem title="Open Opportunities" icon={faGlobe} to="https://stagingapp.blue222.com/OpenMaps" />
-            <SidebarItem title="Portfolios" icon={faList} to="/portfolios" />
+            <SidebarItem title="Portfolios" icon={faList} to="/ManagePortfolios" />
             <SidebarItem title="Preferred Vendors" icon={faUsers} to="/preferred-vendors" >
             <SidebarItem title = "Invite Vendors" icon={faChevronRight} to="/invite-vendors" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
