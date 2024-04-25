@@ -4,6 +4,10 @@ import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
 import { useDropzone } from 'react-dropzone';
+import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDashboard } from '@fortawesome/free-solid-svg-icons';
+import  './OrganizationDropbox.css'
 
 function OrganizationDropBox() {
     const [linkUrl, setLinkUrl] = useState('');
@@ -41,7 +45,20 @@ function OrganizationDropBox() {
                     <Sidebar />
                 </div>
             </div>
-            <div className="content" style={{ paddingLeft: '200px', overflowY: 'auto', maxHeight: '500px', paddingTop: '5px' }}>
+         
+     <div >
+            <div id="content" >
+            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px' }}>
+             
+            <div className="col-md-6 col-sm-6 col-xs-12">
+                <ol className="breadcrumb" >
+                    <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} />Dashboard</Link></li>
+                    <li>Vendor Win / Loss Ratio</li>
+                </ol>
+            </div>
+        
+    </div>
+    <div className='content-contianer'>
                 <div className="panel panel-info">
                     <div className="panel-heading">
                         <div className="panel-title" style={{ padding: '10px', fontWeight: 'bold' }}>Organization DropBox</div>
@@ -126,7 +143,9 @@ function OrganizationDropBox() {
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
+        </div>
         </div>
     );
 }

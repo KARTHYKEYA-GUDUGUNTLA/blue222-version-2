@@ -19,11 +19,17 @@
   .layout {
     max-width: 150px; 
   }
+  .sidebar-link{
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 480px) {
   .layout {
     max-width: 100px; 
+  }
+  .sidebar-link{
+    max-width: 100px;
   }
 }
 
@@ -112,7 +118,7 @@
       align-items: center;
       justify-content: space-between;
       max-width: 200px; 
-      width: 100%; 
+      width: auto; 
     }
     
     
@@ -152,7 +158,7 @@
     text-decoration: none; /* Remove underline */
     background-color: #124c70; /* Set background color for the box-like effect */
     border-radius: 5px; /* Optional: Add border radius for rounded corners */
-    margin-bottom: 10px; /* Optional: Add spacing between links */
+   
  
 }
 
@@ -196,3 +202,22 @@
     padding-left: 36px; 
   }
     
+  .sidebar-link.karthy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    flex-grow: 1; /* Grow to fill available space */
+  }
+
+  .sidebar-link.non-karthy{
+    display: flex;
+    align-items: center;
+  }
+  
+  .title {
+    margin-right: auto; /* Push the title to the right */
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarItem from './SidebarItem';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faPenToSquare, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css';
 import {
   faDashboard,
@@ -11,6 +11,7 @@ import {
   faDollar,
   faBarChartO,
   faLightbulbO,
+  faCaretDown,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
@@ -22,7 +23,7 @@ const Sidebar = () => {
 
         
             <SidebarItem title="Dashboard" icon={faDashboard} to="/dashboard" />
-            <SidebarItem title="Post Project" icon={faDashboard} to="#">
+            <SidebarItem title="Post Project" icon={faPenToSquare} to="#">
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           <SidebarItem title = "portfolio" icon={faChevronRight} to="/portfolio" />
             </SidebarItem>
@@ -33,11 +34,11 @@ const Sidebar = () => {
             <SidebarItem title = "Invite Vendors" icon={faChevronRight} to="/invite-vendors" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
             <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
-            <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
+            <SidebarItem title = "Vendor Win/Loss" icon={faChevronRight} to="/vendorloss" />
             </SidebarItem>
             <SidebarItem title="Accounting" icon={faDollar} to="/accounting" >
             <SidebarItem title = "Overview" icon={faChevronRight} to="/account" />
-            <SidebarItem title = "single-project" icon={faChevronRight} to="/cardonfile" />
+            <SidebarItem title = "Payment Info" icon={faChevronRight} to="/cardonfile" />
             </SidebarItem >
            
           
@@ -47,7 +48,7 @@ const Sidebar = () => {
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           </SidebarItem>
-            <SidebarItem title="Support" icon={faDashboard} to="/support"/>
+            <SidebarItem title="Support" icon={faLightbulb} to="/support"/>
           </div>
         </nav>
       </div>

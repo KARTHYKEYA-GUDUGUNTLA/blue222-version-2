@@ -16,4 +16,36 @@
   body {
     overflow: hidden; 
   }
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1; /* Fill remaining space */
+    padding-left: 10px; /* Adjust as needed */
+  }
+  
+  #site-logo {
+    padding: 10px; /* Adjust padding as needed */
+  }
+  #site-logo img {
+    width: 158px; /* Default logo width */
+    height: 60px; /* Default logo height */
+  }
+  
+  @media (max-width: 768px) {
+    #site-logo img {
+      width: 120px; /* Adjust logo width for smaller screens */
+      height: 46px; /* Adjust logo height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #site-logo img {
+      width: 100px; /* Adjust logo width for even smaller screens */
+      height: 38px; /* Adjust logo height for even smaller screens */
+    }
+  }
+  
   

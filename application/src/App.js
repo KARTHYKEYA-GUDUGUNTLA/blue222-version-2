@@ -18,6 +18,7 @@ import Settings1 from './settings/settings1';
 import MyTabs from './settings/Profile/Profile';
 import OrganizationDropBox from './OrganizationDropBox/OrganizationDropbox';
 import AccountingPage from './Accounting Overview/AccountingPage';
+import LossRatio from './Preferred Vendors/LossRatio';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/profile' element={<MyTabs />} />
           <Route path='/Organization' element={<OrganizationDropBox />} />
           <Route path= '/account'  element={<AccountingPage />} />
+          <Route path='/vendorloss' element={<LossRatio />} />
         </Routes>
       </BrowserRouter>
     </div>

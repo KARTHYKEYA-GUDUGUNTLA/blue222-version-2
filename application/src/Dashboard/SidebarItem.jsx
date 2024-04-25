@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp ,faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown,  faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css';
 
 const SidebarItem = ({ title, icon, children, to }) => {
@@ -19,17 +19,27 @@ const SidebarItem = ({ title, icon, children, to }) => {
 
   return (
     <li className="sidebar-item">
-      {hasChildren ? (
-        <div onClick={handleClick} className="sidebar-link">
-          <FontAwesomeIcon icon={icon} className="me-2" /> {title}
-          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="sidebar-chevron" style={{paddingLeft:20}} />
-        </div>
-      ) : (
-        <NavLink to={to} className="sidebar-link">
-          <FontAwesomeIcon icon={icon} className="me-2" /> {title}
-        </NavLink>
-        
-      )}
+    {hasChildren ? (
+      <div onClick={handleClick} className="sidebar-link karthy">
+        <FontAwesomeIcon icon={icon} className="me-2" />
+        &nbsp;
+        &nbsp;
+        <span className="title">{title}</span>
+        {hasChildren && (
+          <FontAwesomeIcon
+            icon={isOpen ? faCaretUp : faCaretDown}
+            className="sidebar-chevron"
+            style={{ paddingLeft: 20 }}
+          />
+        )}
+      </div>
+    ) : (
+      <NavLink to={to} className="sidebar-link">
+        <FontAwesomeIcon icon={icon} className="me-2" /> 
+           &nbsp;
+        &nbsp; <span className="title">{title}</span>
+      </NavLink>
+    )}
       {hasChildren && (
         <Collapse in={isOpen}>
           <div className="sidebar-content-container">
