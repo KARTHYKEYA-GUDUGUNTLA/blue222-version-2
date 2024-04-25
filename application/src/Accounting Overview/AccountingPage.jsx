@@ -29,18 +29,20 @@ const AccountingPage = () => {
             </div>
         </div>
         <div id="content">
-            <div id="content-header" style={{ borderBottomRightRadius: '4px', borderBottomLeftRadius: '4px', borderTopLeftRadius: '4px', borderTopRightRadius: '4px' }}>
-                <ol className="breadcrumb" style={{ marginLeft: '30px' }}>
+        <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px', marginBottom:'35px' }}>
+        <div className="col-md-6 col-sm-6 col-xs-12">
+                <ol className="breadcrumb" >
                     <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} /> Dashboard</Link></li>
                     <li>Accounting</li>
                     <li>Overview</li>
                 </ol>
             </div>
+            </div>
  
             <div id="content-container">
                 <div className="content">
                     <div className="col-md-12">
-                        <div className="page-header">
+                    <div className="page-header" style={{margin:'0px'}} >
                             <h3 align="left">Accounting Overview</h3>
                         </div>
                         <form>

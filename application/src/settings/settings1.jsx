@@ -3,7 +3,7 @@ import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
 import { emailnotifications, textnotifications } from '../data/settingnotifications';
-
+import './settings.css'
 function Settings1() {
     const [selectAllSet1, setSelectAllSet1] = useState(false);
     const [selectAllSet2, setSelectAllSet2] = useState(false);
@@ -100,7 +100,18 @@ function Settings1() {
                     <Sidebar />
                 </div>
             </div>
-            <div className="content" style={{ paddingLeft: '200px', overflowY: 'auto', maxHeight: '500px', paddingTop: '5px' }}>
+            <div id='content'>
+            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px' }}>
+             
+            <div className="col-md-6 col-sm-6 col-xs-12">
+                <ol className="breadcrumb" >
+                    <li> User Name / Settings </li>
+                </ol>
+            </div>
+        
+    </div>
+    <div id='content-container'>
+            <div className="content" style={{ overflowY: 'auto', maxHeight: '400px', paddingTop: '5px' }}>
             <div className="col-sm-4">
             <div className="panel panel-info">
               <div className="panel-heading">
@@ -234,6 +245,8 @@ function Settings1() {
                         />
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
         </div>
     );

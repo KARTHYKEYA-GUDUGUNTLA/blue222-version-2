@@ -46,7 +46,7 @@ const Sidebar = () => {
             <SidebarItem title = "Manage Users" icon={faChevronRight} to="/usersmanagement" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
           <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
-          <SidebarItem title = "single-project" icon={faChevronRight} to="/single-project" />
+          <SidebarItem title = "Org-DropBox" icon={faChevronRight} to="/Organization" />
           </SidebarItem>
             <SidebarItem title="Support" icon={faLightbulb} to="/support"/>
           </div>

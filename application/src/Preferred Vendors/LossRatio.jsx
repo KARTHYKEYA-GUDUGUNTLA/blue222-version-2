@@ -21,7 +21,7 @@ const LossRatio = () => {
             </div>
         </div>
         <div id="content">
-            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px' }}>
+            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px'}}>
              
                     <div className="col-md-6 col-sm-6 col-xs-12">
                         <ol className="breadcrumb" >
@@ -33,8 +33,8 @@ const LossRatio = () => {
             </div>
             <div id="content-container">
                 <div className="content">
-                    <div className="col-md-12">
-                        <div className="col-md-12"></div>
+                    <div className="col-md-12"  style={{paddingTop:'30px'}}>
+                        
                         <div className="portlet">
                             <table className="ui-table-reflow tablesorter table table-bordered tablesorter-bootstrap" style={{ fontSize: '13px' }} role="grid">
                                 <colgroup></colgroup>

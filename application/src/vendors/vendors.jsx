@@ -5,8 +5,9 @@ import logo from '../images/logo_new.png';
 import Karthy from './Karthy';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDashboard } from '@fortawesome/free-solid-svg-icons';
-import './vendors.css'
+
 import { Link } from "react-router-dom";
+import './vendors.css'
 
 const handleSearchButtonClick = () => {
     // Logic for handling the button click goes here
@@ -41,7 +42,7 @@ function Vendors() {
     <div id="content-container">
     <div>
             <div className="panel-body" style={{paddingTop:'0'}}>
-                <div className="page-header" style={{marginTop:'0px' , marginBottom:'0px'}}>
+            <div className="page-header" style={{margin:'0px'}} >
                     <h3>Invite Preferred Vendors</h3>
                 </div>
                 

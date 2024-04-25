@@ -6,10 +6,6 @@ import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
 import './singleproject.css';
-
-import { faDashboard } from '@fortawesome/free-solid-svg-icons';
-
-import { Link } from "react-router-dom";
 import LocationForm from './LocationInformation';
 import { useDropzone } from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -99,21 +95,8 @@ function handleMoveSelected() {
                     <Sidebar />
                 </div>
             </div>
-
-
-            <div id='content'>
-            <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px' }}>
-             
-            <div className="col-md-6 col-sm-6 col-xs-12">
-                <ol className="breadcrumb" >
-                    <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} />Dashboard</Link></li>
-                    <li>Vendor Win / Loss Ratio</li>
-                </ol>
-            </div>
-            </div>
-            <div id = 'content-container'>
-            <div className="scrollable-form" style={{ height: '100%', overflowY: 'auto'}}>
-            <div className="panel panel-info" style={{paddingRight: '10px' }}>
+            <div className="scrollable-form" style={{ maxHeight: '500px', overflowY: 'auto'}}>
+            <div className="panel panel-info" style={{ paddingLeft: '220px', paddingRight: '10px' }}>
             <div style={{ backgroundColor: "#d9edf7", paddingLeft: '10px' }}>
                 <div className="row">
             <div className="col-md-5">
@@ -121,7 +104,6 @@ function handleMoveSelected() {
             <label style={{ fontSize: '12px' }} className="control-label">
               Project Templates
             </label>
-            <span class="help-tip" data-toggle="tooltip" data-placement="auto" title="These are templates that you have saved for yourself, if you wish to use the same template for multiple RFPs ."></span>
             <select style={{ width: '50%' , paddingLeft : '30px' }}>
 </select>
           
@@ -133,7 +115,7 @@ function handleMoveSelected() {
  
             </div>
         
-           <div className="panel panel-info" style={{paddingRight: '10px' }}>
+           <div className="panel panel-info" style={{ paddingLeft: '220px', paddingRight: '10px' }}>
            <div style={{ backgroundColor: "#d9edf7", paddingLeft: '10px' }}>
             <div className="row" style={{ marginTop: "2px"}}>
                 <div className="col-md-5">
@@ -179,7 +161,7 @@ function handleMoveSelected() {
           </div>
       
 
-               <div className="panel panel-info" style={{ paddingRight: '15px' }}>
+               <div className="panel panel-info" style={{ paddingLeft: '200px', paddingRight: '15px' }}>
                     <form onSubmit={handleSubmit} className="panel-body">
                         {/* Panel for Job Information */}
                         <div className="col-sm-4">
@@ -297,7 +279,7 @@ function handleMoveSelected() {
                     * Indicates a required field
                   </span>
                 </div>
-                <div className="row" >
+                <div className="row" style={{paddingLeft :'210px'}}>
                 <div className="panel panel-info" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
                 <div className="panel-heading" style={{ backgroundColor: "#d9edf7" }}>
                 <div class="panel-title" >Attach Documents</div>
@@ -402,30 +384,30 @@ function handleMoveSelected() {
                                                     </div>
                                  </div>
 
-                                 <div >
+                                 <div style={{ paddingLeft: '220px' }}>
                                  <div className="row" style={{ display: 'flex',paddingLeft:'30px' }}>
                                  <div style={{ marginRight: '10px', marginTop: '1%' }}>
                                  <button
-                                 id="savetemplate"
-                                 className="btn btn-success"
+                                     id="deletedtemplate"
+                                     className="btn btn-success"
+                                     data-toggle="modal"
+                                     data-target="#myModal1"
+                                     type="button"
+                                 >
+                                     Continue
+                                 </button>
+                             </div>
+                             <div style={{ marginRight: '10px', marginTop: '1%' }}>
+                             <button
+                                 id="deletedtemplate"
+                                 className="btn btn-primary"
                                  data-toggle="modal"
-                                 data-target="#myModal"
+                                 data-target="#myModal1"
                                  type="button"
                              >
-                                 Continue
+                                 Save as Draft
                              </button>
-                                 </div>
-                                 <div style={{ marginRight: '10px', marginTop: '1%' }}>
-                                     <button
-                                         id="savetemplate"
-                                         className="btn btn-primary"
-                                         data-toggle="modal"
-                                         data-target="#myModal"
-                                         type="button"
-                                     >
-                                         Save as Draft
-                                     </button>
-                                 </div>
+                         </div>
                                  <div style={{ marginRight: '10px', marginTop: '1%' }}>
                                      <button
                                          id="savetemplate"
@@ -455,29 +437,9 @@ function handleMoveSelected() {
                              </div>
                              
             </div>
-
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
             
         </div>
     );
 }
 
 export default ProjectForm;
-
-
-
-
-
