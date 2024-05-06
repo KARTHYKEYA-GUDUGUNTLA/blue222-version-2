@@ -20,6 +20,9 @@ import OrganizationDropBox from './OrganizationDropBox/OrganizationDropbox';
 import AccountingPage from './Accounting Overview/AccountingPage';
 import LossRatio from './Preferred Vendors/LossRatio';
 import ManagePortfolios from './Portfolio-3rd-folder/ManagePortfolios';
+import TargetLocations from './TargetLocations/TargetLocations';
+import ManageTeam from './ManageTeam/ManageTeam';
+import OrgProfile from './Organization Profile/OrgProfile';
 
 function App() {
   return (
@@ -45,6 +48,9 @@ function App() {
           <Route path= '/account'  element={<AccountingPage />} />
           <Route path='/vendorloss' element={<LossRatio />} />
           <Route path='/ManagePortfolios' element={<ManagePortfolios />} />
+          <Route path='/TargetLocations' element={<TargetLocations />} />
+          <Route path='/karthy' element = {<ManageTeam />} />
+          <Route path='/testing' element ={<OrgProfile />}/>
         </Routes>
       </BrowserRouter>
     </div>

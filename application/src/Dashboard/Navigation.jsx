@@ -50,9 +50,9 @@ const Navigation = () => {
             </li>
           
             <li>
-              <Dropdown.Item href="https://stagingapp.blue222.com/logout">
-                <FontAwesomeIcon icon={faSignOutAlt} /> Logout
-              </Dropdown.Item>
+            <Dropdown.Item href="http://localhost:3000">
+            <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+          </Dropdown.Item>
             </li>
           </Dropdown.Menu>
           

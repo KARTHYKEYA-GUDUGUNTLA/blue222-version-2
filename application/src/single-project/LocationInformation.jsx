@@ -192,8 +192,6 @@ function LocationForm({ formData, handleChange }) {
                              <div className="form-group">
                              <label htmlFor="numberOfLots">Number of Lots</label>
                              <input
-                                 id="numberOfLots"
-                                 name="numberOfLots"
                                  type="text"
                                  className="form-control"
                                  value={formData.numberOfLots}
@@ -211,8 +209,6 @@ function LocationForm({ formData, handleChange }) {
                     <div className="col-sm-6">
                         <label htmlFor="numberOfLots1">Assessor Budget (not shown to Vendor)</label>
                         <input
-                            id="numberOfLots1"
-                            name="numberOfLots1"
                             type="text"
                             className="form-control"
                             value={formData.numberOfLots}
@@ -234,8 +230,6 @@ function LocationForm({ formData, handleChange }) {
                     (please note)
                   </span>
                     <input
-                        id="numberOfLots1"
-                        name="numberOfLots1"
                         type="text"
                         className="form-control"
                         value={formData.numberOfLots}
@@ -266,8 +260,6 @@ function LocationForm({ formData, handleChange }) {
             <div className="col-sm-3">
             <label htmlFor="numberOfLots1">EPS Risk Rating</label>
             <input
-                id="numberOfLots1"
-                name="numberOfLots1"
                 type="text"
                 className="form-control"
                 value={formData.numberOfLots}
@@ -278,8 +270,6 @@ function LocationForm({ formData, handleChange }) {
         <div className="col-sm-3">
             <label htmlFor="numberOfLots1">Land Use Code</label>
             <input
-                id="numberOfLots1"
-                name="numberOfLots1"
                 type="text"
                 className="form-control"
                 value={formData.numberOfLots}
@@ -296,8 +286,6 @@ function LocationForm({ formData, handleChange }) {
                 <div className="col-sm-3">
                 <label htmlFor="numberOfLots1">Site Contact Name</label>
                 <input
-                    id="numberOfLots1"
-                    name="numberOfLots1"
                     type="text"
                     className="form-control"
                     value={formData.numberOfLots}
@@ -308,8 +296,6 @@ function LocationForm({ formData, handleChange }) {
             <div className="col-sm-3">
             <label htmlFor="numberOfLots1">Site Contact Email</label>
             <input
-                id="numberOfLots1"
-                name="numberOfLots1"
                 type="text"
                 className="form-control"
                 value={formData.numberOfLots}
@@ -320,8 +306,6 @@ function LocationForm({ formData, handleChange }) {
         <div className="col-sm-3">
             <label htmlFor="numberOfLots1">Site Contact Phone</label>
             <input
-                id="numberOfLots1"
-                name="numberOfLots1"
                 type="text"
                 className="form-control"
                 value={formData.numberOfLots}
@@ -332,8 +316,6 @@ function LocationForm({ formData, handleChange }) {
         <div className="col-sm-3">
             <label htmlFor="numberOfLots1">Property Type Complexity</label>
             <input
-                id="numberOfLots1"
-                name="numberOfLots1"
                 type="text"
                 className="form-control"
                 value={formData.numberOfLots}

@@ -2,6 +2,11 @@ import React from 'react';
 import Navigation from '../Dashboard/Navigation';
 import Sidebar from '../Dashboard/Sidebar';
 import logo from '../images/logo_new.png';
+import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDashboard } from '@fortawesome/free-solid-svg-icons';
+import AccountingTable from "./AccountingTable";
+import './Accounting.css';
 
 const ManageUsers = () => {
     const handleSubmit = (e) => {
@@ -19,14 +24,26 @@ const ManageUsers = () => {
                 <Sidebar />
             </div>
         </div>
-        <div className="content" style={{paddingLeft:'210px'}}>
-            <div >
-                <h3 align="left">Manage Users</h3>
+        <div className="content" style={{paddingLeft:'200px'}}>
+        <div id="content-header" style={{ borderBottomRightRadius: '4px' , borderBottomLeftRadius: '4px' , borderTopLeftRadius: '4px' , borderTopRightRadius: '4px'}}>
+             
+            <div className="col-md-6 col-sm-6 col-xs-12">
+                <ol className="breadcrumb" >
+                    <li><Link to="https://stagingapp.blue222.com/fadmin/dashboard/fain_progress"><FontAwesomeIcon icon={faDashboard} />Dashboard</Link></li>
+                    <li> Manage Account / Organization DropBox</li>
+                </ol>
             </div>
+          
+    </div>
+            <div id ='content-container'>
+            
             <div className="col-md-12">
+            <div className="page-header" style={{margin:'0px',marginBottom:'15px'}} >
+            <h3 align="left">Manage Users</h3>
+        </div>
                 <div className="row">
                     <form onSubmit={handleSubmit} id="addteammember">
-                        <div className="col-md-2">
+                        <div className="col-md-3">
                             <label htmlFor="first_name" className="control-label">First Name</label>
                             <input id="first_name" name="first_name" className="form-control" type="text" />
                             <span className="error-display" style={{ color: 'red' }}></span>
@@ -56,11 +73,19 @@ const ManageUsers = () => {
                             <span className="error-display" style={{ color: 'red' }}></span>
                         </div>
                         <div className="col-md-2" style={{ marginTop: '28px' }}>
-                            <input id="add_team_member" className="btn btn-success btn-lg"  value="Add Team Member" name="add_team_member" form="addteammember" type="submit" />
+                        <button
+                        id="AddTeamMember"
+                        className="btn btn-success"
+                        type="button"
+                    >
+                        AddTeamMember
+                    </button>
                         </div>
                     </form>
                 </div>
-              
+                <AccountingTable />
+            </div>
+
             </div>
         </div>
         </div>
