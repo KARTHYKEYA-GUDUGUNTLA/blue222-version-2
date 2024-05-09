@@ -107,7 +107,7 @@ const Step = () => {
               <FontAwesomeIcon icon={faCheck} style={{paddingRight:5}} />
              
 
-              <Link to="/CreateAccount">SignUp</Link>
+              <Link to="/Createaccount">SignUp</Link>
             </div> 
           </div>
             </div>

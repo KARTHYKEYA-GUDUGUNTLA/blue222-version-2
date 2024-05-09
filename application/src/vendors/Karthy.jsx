@@ -13,9 +13,9 @@ const Karthy = () => {
 
     return (
         <div className="panel-body" style={{padding:'0px',paddingLeft:'30px'}}>
-            <div className="col-md-12">
+            <div className="col-md-14">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-12">
                         <div className="dev-drop">
                             <ul className="nav">
                                 <div className="dropdown">

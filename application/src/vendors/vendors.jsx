@@ -42,7 +42,7 @@ function Vendors() {
     <div id="content-container">
     <div>
             <div className="panel-body" style={{paddingTop:'0'}}>
-            <div className="page-header" style={{margin:'0px'}} >
+            <div className="page-header" style={{margin:'0px' , marginBottom:'15px'}} >
                     <h3>Invite Preferred Vendors</h3>
                 </div>
                 
@@ -72,35 +72,34 @@ function Vendors() {
                 
                 <div >
                 <div className="row" >
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <label htmlFor="search_service_capabilities" className="control-label" style={{ paddingLeft :'40px' }}>Service Capabilities</label>
                         <Karthy />
                     </div>
-                    <div className="col-md-2">
-                        <label htmlFor="search_zip_code">ZIP Code</label>
+                    <div className="col-md-3">
+                        <label htmlFor="search_zip_code" style={{marginLeft:'20px'}}>ZIP Code</label>
                         <input
                             id="search_zip_code"
                             className="form-control"
                             name="search_zip_code"
                             type="text"
                             value=""
+                            style={{marginLeft:'15px'}}
                         />
                     </div>
-                    <div className="col-md-1" style={{ marginTop: '28px' }}>
-                        <b>OR</b>
+                    <div className="col-md-1" style={{ marginTop: '28px',marginLeft:'30px'}}>
+                        <p style={{fontWeight:'bold'}}>OR</p>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-md-3" style={{marginRight :'5px'}}>
                         <label htmlFor="search_city_name">City Name</label>
                         <input
                             id="search_city_name"
                             className="form-control"
                             name="search_city_name"
                             type="text"
-                            value=""
-                            autoComplete="off"
                         />
                     </div>
-                    <div className="col-md-2" style={{marginTop : '25px'}}>
+                    <div className="col-md-1" style={{marginTop : '25px',marginRight:'20px'}}>
                         <button
                             className="btn btn-success"
                             id="btn_search_vendor"

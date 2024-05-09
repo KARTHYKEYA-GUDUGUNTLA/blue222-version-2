@@ -42,7 +42,7 @@ const AccountingPage = () => {
             <div id="content-container">
                 <div className="content">
                     <div className="col-md-12">
-                    <div className="page-header" style={{margin:'0px'}} >
+                    <div className="page-header" style={{margin:'0px',marginBottom:'15px'}} >
                             <h3 align="left">Accounting Overview</h3>
                         </div>
                         <form>

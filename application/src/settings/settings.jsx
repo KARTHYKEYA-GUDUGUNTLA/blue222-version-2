@@ -53,6 +53,7 @@ function Settings() {
             </div>
         </div>
     <div className="content" style={{paddingLeft:'200px',overflowY: 'auto', maxHeight: '500px' ,paddingTop:'5px'}}>
+    
       <div className="col-sm-4">
         <div className="panel panel-info">
           <div className="panel-heading">
