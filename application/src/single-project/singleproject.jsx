@@ -88,7 +88,7 @@ function handleMoveSelected() {
     };
 
     return (
-        <div className="single">
+        <div className="single scrollable-form " style={{ maxHeight: '400px', overflowY: 'auto'}}>
             <Navigation />
             <div className="layout">
                 <div id="site-logo" style={{ paddingTop: '10px', paddingBottom: '30px', paddingLeft: '20px' }}>
@@ -108,7 +108,7 @@ function handleMoveSelected() {
                 </div>
                 </div>
                 <div id='content-container'>
-            <div className="scrollable-form " style={{ maxHeight: '400px', overflowY: 'auto'}}>
+            <div >
             <div className="panel panel-info" style={{ paddingRight: '10px' }}>
             <div style={{ backgroundColor: "#d9edf7", paddingLeft: '10px' }}>
                 <div className="row">
